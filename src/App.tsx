@@ -345,7 +345,7 @@ export default function App() {
                 Magazinska ul. 16
               </motion.a>
               <div className="w-8 h-px bg-white/20 mb-4"></div>
-              <p className="text-xl font-serif tracking-widest">20:00</p>
+              <p className="text-xl font-serif tracking-widest">19:00</p>
             </div>
 
           </div>
