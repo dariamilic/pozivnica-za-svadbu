@@ -291,50 +291,59 @@ export default function App() {
             
             {/* Okupljanje */}
             <div className="flex flex-col items-center px-4">
-              <h3 className="text-sm font-serif mb-3 tracking-[0.3em] uppercase text-white/90">OKUPLJANJE</h3>
+              <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-white/90">OKUPLJANJE</h3>
               <div className="w-px h-6 bg-white/20 mb-4 hidden md:block"></div>
-              <a 
+              <motion.a 
                 href="https://www.google.com/maps/search/?api=1&query=Božjakovinska+ul.+34B+Zagreb" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-[10px] text-white/70 mb-3 italic tracking-wide hover:text-white transition-colors underline underline-offset-4 decoration-white/20"
+                animate={{ opacity: [0.5, 1, 0.5] }}
+                transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                className="text-sm text-white/80 mb-3 italic tracking-wide hover:text-white transition-colors underline underline-offset-4 decoration-white/20 flex items-center gap-1"
               >
+                <MapPin size={14} className="shrink-0" />
                 Božjakovinska ul. 34B
-              </a>
+              </motion.a>
               <div className="w-8 h-px bg-white/20 mb-4"></div>
               <p className="text-xl font-serif tracking-widest">15:00</p>
             </div>
 
             {/* Vjenčanje */}
             <div className="flex flex-col items-center px-4 border-y md:border-y-0 md:border-x border-white/10 py-8 md:py-0">
-              <h3 className="text-sm font-serif mb-3 tracking-[0.3em] uppercase text-white/90">VJENČANJE</h3>
+              <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-white/90">VJENČANJE</h3>
               <div className="w-px h-6 bg-white/20 mb-4 hidden md:block"></div>
-              <p className="text-[10px] text-white/90 font-medium mb-1 uppercase tracking-wider">Crkva bl. Djevice Marije Majke Crkve</p>
-              <a 
+              <p className="text-base text-white/90 font-medium mb-1 uppercase tracking-wider">Crkva bl. Djevice Marije Majke Crkve</p>
+              <motion.a 
                 href="https://www.google.com/maps/search/?api=1&query=Tomaševa+ul.+22+Zagreb" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-[10px] text-white/70 mb-3 italic tracking-wide hover:text-white transition-colors underline underline-offset-4 decoration-white/20"
+                animate={{ opacity: [0.5, 1, 0.5] }}
+                transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                className="text-sm text-white/80 mb-3 italic tracking-wide hover:text-white transition-colors underline underline-offset-4 decoration-white/20 flex items-center gap-1"
               >
+                <MapPin size={14} className="shrink-0" />
                 Tomaševa ul. 22
-              </a>
+              </motion.a>
               <div className="w-8 h-px bg-white/20 mb-4"></div>
               <p className="text-xl font-serif tracking-widest">17:00</p>
             </div>
 
             {/* Večera */}
             <div className="flex flex-col items-center px-4 py-8 md:py-0">
-              <h3 className="text-sm font-serif mb-3 tracking-[0.3em] uppercase text-white/90">VEČERA</h3>
+              <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-white/90">VEČERA</h3>
               <div className="w-px h-6 bg-white/20 mb-4 hidden md:block"></div>
-              <p className="text-[10px] text-white/90 font-medium mb-1 uppercase tracking-wider">The Hall</p>
-              <a 
+              <p className="text-base text-white/90 font-medium mb-1 uppercase tracking-wider">The Hall</p>
+              <motion.a 
                 href="https://www.google.com/maps/search/?api=1&query=Magazinska+ul.+16+Zagreb" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-[10px] text-white/70 mb-3 italic tracking-wide hover:text-white transition-colors underline underline-offset-4 decoration-white/20"
+                animate={{ opacity: [0.5, 1, 0.5] }}
+                transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                className="text-sm text-white/80 mb-3 italic tracking-wide hover:text-white transition-colors underline underline-offset-4 decoration-white/20 flex items-center gap-1"
               >
+                <MapPin size={14} className="shrink-0" />
                 Magazinska ul. 16
-              </a>
+              </motion.a>
               <div className="w-8 h-px bg-white/20 mb-4"></div>
               <p className="text-xl font-serif tracking-widest">20:00</p>
             </div>
