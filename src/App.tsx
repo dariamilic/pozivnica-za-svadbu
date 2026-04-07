@@ -10,7 +10,8 @@ import {
   Heart,
   Music,
   Utensils,
-  MailOpen
+  MailOpen,
+  Church
 } from 'lucide-react';
 
 // --- Components ---
@@ -274,7 +275,7 @@ export default function App() {
       {/* Countdown Section - Slightly darker green as requested */}
       <section className="py-24 bg-wedding-green-dark px-6">
         <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-lg font-serif text-white mb-2 tracking-[0.2em] uppercase">Odbrojavanje</h2>
+          <h2 className="text-lg font-serif text-white mb-2 tracking-[0.2em] pl-[0.2em] uppercase">Odbrojavanje</h2>
           <p className="text-[10px] italic text-white/40 mb-8 uppercase tracking-widest">Do najljepšeg dana u našim životima</p>
           <Countdown targetDate={weddingDate} />
         </div>
@@ -284,13 +285,16 @@ export default function App() {
       <section className="py-16 bg-wedding-green px-6 relative overflow-hidden">
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-serif tracking-[0.4em] uppercase text-white">RASPORED</h2>
+            <h2 className="text-2xl md:text-3xl font-serif tracking-[0.4em] pl-[0.4em] uppercase text-white">RASPORED</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             
             {/* Okupljanje */}
             <div className="flex flex-col items-center px-4">
+              <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-wedding-green bg-white shadow-sm mb-4">
+                <Clock size={20} strokeWidth={1.5} />
+              </div>
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-white/90">OKUPLJANJE</h3>
               <div className="w-px h-6 bg-white/20 mb-4 hidden md:block"></div>
               <motion.a 
@@ -310,6 +314,9 @@ export default function App() {
 
             {/* Vjenčanje */}
             <div className="flex flex-col items-center px-4 border-y md:border-y-0 md:border-x border-white/10 py-8 md:py-0">
+              <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-wedding-green bg-white shadow-sm mb-4">
+                <Church size={20} strokeWidth={1.5} />
+              </div>
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-white/90">VJENČANJE</h3>
               <div className="w-px h-6 bg-white/20 mb-4 hidden md:block"></div>
               <p className="text-base text-white/90 font-medium mb-1 uppercase tracking-wider">Crkva bl. Djevice Marije Majke Crkve</p>
@@ -330,6 +337,9 @@ export default function App() {
 
             {/* Večera */}
             <div className="flex flex-col items-center px-4 py-8 md:py-0">
+              <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-wedding-green bg-white shadow-sm mb-4">
+                <Utensils size={20} strokeWidth={1.5} />
+              </div>
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-white/90">VEČERA</h3>
               <div className="w-px h-6 bg-white/20 mb-4 hidden md:block"></div>
               <p className="text-base text-white/90 font-medium mb-1 uppercase tracking-wider">The Hall</p>
@@ -351,7 +361,7 @@ export default function App() {
           </div>
 
           <div className="text-center mt-16">
-             <h2 className="text-xl md:text-2xl font-serif tracking-[0.3em] uppercase text-white">VESELIMO SE VAŠEM DOLASKU!</h2>
+             <h2 className="text-xl md:text-2xl font-serif tracking-[0.3em] pl-[0.3em] uppercase text-white">VESELIMO SE VAŠEM DOLASKU!</h2>
           </div>
         </div>
       </section>
@@ -360,7 +370,7 @@ export default function App() {
       <section className="py-24 bg-wedding-green-dark px-6">
         <div className="max-w-xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-xl font-serif text-white mb-2 tracking-[0.2em] uppercase">Informacije</h2>
+            <h2 className="text-xl font-serif text-white mb-2 tracking-[0.2em] pl-[0.2em] uppercase">Informacije</h2>
           </div>
           
           <div className="space-y-2">
@@ -385,7 +395,7 @@ export default function App() {
             <div className="flex flex-col items-center">
               <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide">Brigita</p>
               <a href="tel:0951231234" className="text-white/70 hover:text-white transition-colors text-xs md:text-sm tracking-[0.2em]">
-                095 509 9162
+                095 123 1234
               </a>
             </div>
             
@@ -394,7 +404,7 @@ export default function App() {
             <div className="flex flex-col items-center">
               <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide">Luka</p>
               <a href="tel:0951231234" className="text-white/70 hover:text-white transition-colors text-xs md:text-sm tracking-[0.2em]">
-                099 273 0826
+                095 123 1234
               </a>
             </div>
           </div>
