@@ -385,7 +385,7 @@ export default function App() {
             <div className="flex flex-col items-center">
               <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide">Brigita</p>
               <a href="tel:0951231234" className="text-white/70 hover:text-white transition-colors text-xs md:text-sm tracking-[0.2em]">
-                095 123 1234
+                095 509 9162
               </a>
             </div>
             
