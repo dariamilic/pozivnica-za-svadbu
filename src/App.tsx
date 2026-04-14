@@ -412,7 +412,7 @@ export default function App() {
           
           <div className="space-y-2">
             <Accordion title="Upute o parkingu">
-              <p className="mb-4">Parkiranje prije okupljanja svatova i vjencanja je moguće ispred restorana ,<strong>Terazza Mihita</strong> u neposrednoj blizini crkve i <strong>ispred crkve</strong>. </p>
+              <p className="mb-4">Parkiranje prije okupljanja svatova i vjenčanja je moguće ispred restorana ,<strong>Terazza Mihita</strong> u neposrednoj blizini crkve i <strong>ispred crkve</strong>. </p>
               <p>Parking za goste osiguran je u garaži restorana ,<strong>The Venue</strong>. Garaža je dostupna svim gostima tijekom cijele večeri.</p>
             </Accordion>
           </div>
