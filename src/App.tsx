@@ -369,9 +369,9 @@ export default function App() {
               </div>
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-olive-dark/90">VEČERA</h3>
               <div className="w-px h-6 bg-olive-dark/10 mb-4 hidden md:block"></div>
-              <p className="text-base text-olive-dark/90 font-medium mb-1 uppercase tracking-wider">The Hall</p>
+              <p className="text-base text-olive-dark/90 font-medium mb-1 uppercase tracking-wider">The Venue</p>
               <motion.a 
-                href="https://www.google.com/maps/search/?api=1&query=Magazinska+ul.+16+Zagreb" 
+                href="https://maps.app.goo.gl/fkDgif6E2RYPKMkT7?g_st=iw" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 animate={{ opacity: [0.5, 1, 0.5] }}
@@ -379,7 +379,7 @@ export default function App() {
                 className="text-sm text-olive-dark/80 mb-3 italic tracking-wide hover:text-olive-dark transition-colors underline underline-offset-4 decoration-olive-dark/20 flex items-center gap-1"
               >
                 <MapPin size={14} className="shrink-0" />
-                Magazinska ul. 16
+                Ul. Grada Gospića 1a
                 <MousePointer2 size={12} className="ml-1 text-olive-dark/40" />
               </motion.a>
               <div className="w-8 h-px bg-olive-dark/10 mb-4"></div>
@@ -390,7 +390,7 @@ export default function App() {
 
           <div className="text-center mt-16 flex flex-col items-center gap-6">
              <a 
-               href="https://www.google.com/maps/dir/?api=1&origin=Božjakovinska+ul.+34B+Zagreb&destination=Magazinska+ul.+16+Zagreb&waypoints=Tomaševa+ul.+22+Zagreb" 
+               href="https://www.google.com/maps/dir/?api=1&origin=Božjakovinska+ul.+34B+Zagreb&destination=Ul.+Grada+Gospića+1a+Zagreb&waypoints=Tomaševa+ul.+22+Zagreb" 
                target="_blank" 
                rel="noopener noreferrer"
                className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-olive-dark/20 text-olive-dark rounded-full text-xs tracking-[0.2em] uppercase hover:bg-wedding-green-light transition-all shadow-sm active:scale-95"
@@ -412,7 +412,8 @@ export default function App() {
           
           <div className="space-y-2">
             <Accordion title="Upute o parkingu">
-              <p>Besplatan parking osiguran je u garaži restorana <strong>The Hall</strong>. Garaža je dostupna svim gostima tijekom cijele večeri.</p>
+              <p className="mb-4">Parkiranje je moguće ispred restorana na lokaciji okupljanja. Udaljenost okupljanja od crkve je 4 min hoda te gosti mogu koristiti i parking u crkvenom.</p>
+              <p>Besplatan parking osiguran je u garaži restorana <strong>The Venue</strong>. Garaža je dostupna svim gostima tijekom cijele večeri.</p>
             </Accordion>
           </div>
         </div>
@@ -432,8 +433,8 @@ export default function App() {
           <div className="flex flex-row justify-center items-center gap-8 md:gap-16">
             <div className="flex flex-col items-center">
               <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide text-olive-dark">Brigita</p>
-              <a href="tel:0951231234" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
-                095 123 1234
+              <a href="tel:0955099162" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
+                095 509 9162
               </a>
             </div>
             
@@ -441,8 +442,8 @@ export default function App() {
 
             <div className="flex flex-col items-center">
               <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide text-olive-dark">Luka</p>
-              <a href="tel:0951231234" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
-                095 123 1234
+              <a href="tel:0992730826" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
+                099 273 0826
               </a>
             </div>
           </div>
