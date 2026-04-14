@@ -322,17 +322,16 @@ export default function App() {
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-olive-dark/90">OKUPLJANJE</h3>
               <div className="w-px h-6 bg-olive-dark/10 mb-4 hidden md:block"></div>
               <p className="text-base text-olive-dark/90 font-medium mb-1 uppercase tracking-wider">Terrazza Mihita</p>
+              <p className="text-sm text-olive-dark/80 italic tracking-wide mb-1">Božjakovinska ul. 34B</p>
               <motion.a 
                 href="https://www.google.com/maps/search/?api=1&query=Božjakovinska+ul.+34B+Zagreb" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                className="text-sm text-olive-dark/80 mb-3 italic tracking-wide hover:text-olive-dark transition-colors underline underline-offset-4 decoration-olive-dark/20 flex items-center gap-1"
+                className="text-[10px] text-olive-dark/60 hover:text-olive-dark transition-colors flex items-center gap-1 mb-3 uppercase tracking-[0.2em]"
               >
-                <MapPin size={14} className="shrink-0" />
-                Božjakovinska ul. 34B
-                <MousePointer2 size={12} className="ml-1 text-olive-dark/40" />
+                Otvori <MousePointer2 size={10} className="text-olive-dark/40" />
               </motion.a>
               <div className="w-8 h-px bg-olive-dark/10 mb-4"></div>
               <p className="text-xl font-serif tracking-widest">15:00</p>
@@ -346,17 +345,16 @@ export default function App() {
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-olive-dark/90">VJENČANJE</h3>
               <div className="w-px h-6 bg-olive-dark/10 mb-4 hidden md:block"></div>
               <p className="text-base text-olive-dark/90 font-medium mb-1 uppercase tracking-wider">BDM MAJKE CRKVE</p>
+              <p className="text-sm text-olive-dark/80 italic tracking-wide mb-1">Tomaševa ul. 22</p>
               <motion.a 
                 href="https://www.google.com/maps/search/?api=1&query=Tomaševa+ul.+22+Zagreb" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                className="text-sm text-olive-dark/80 mb-3 italic tracking-wide hover:text-olive-dark transition-colors underline underline-offset-4 decoration-olive-dark/20 flex items-center gap-1"
+                className="text-[10px] text-olive-dark/60 hover:text-olive-dark transition-colors flex items-center gap-1 mb-3 uppercase tracking-[0.2em]"
               >
-                <MapPin size={14} className="shrink-0" />
-                Tomaševa ul. 22
-                <MousePointer2 size={12} className="ml-1 text-olive-dark/40" />
+                Otvori <MousePointer2 size={10} className="text-olive-dark/40" />
               </motion.a>
               <div className="w-8 h-px bg-olive-dark/10 mb-4"></div>
               <p className="text-xl font-serif tracking-widest">17:00</p>
@@ -370,17 +368,16 @@ export default function App() {
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-olive-dark/90">VEČERA</h3>
               <div className="w-px h-6 bg-olive-dark/10 mb-4 hidden md:block"></div>
               <p className="text-base text-olive-dark/90 font-medium mb-1 uppercase tracking-wider">The Venue</p>
+              <p className="text-sm text-olive-dark/80 italic tracking-wide mb-1">Ul. Grada Gospića 1a</p>
               <motion.a 
                 href="https://maps.app.goo.gl/fkDgif6E2RYPKMkT7?g_st=iw" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                className="text-sm text-olive-dark/80 mb-3 italic tracking-wide hover:text-olive-dark transition-colors underline underline-offset-4 decoration-olive-dark/20 flex items-center gap-1"
+                className="text-[10px] text-olive-dark/60 hover:text-olive-dark transition-colors flex items-center gap-1 mb-3 uppercase tracking-[0.2em]"
               >
-                <MapPin size={14} className="shrink-0" />
-                Ul. Grada Gospića 1a
-                <MousePointer2 size={12} className="ml-1 text-olive-dark/40" />
+                Otvori <MousePointer2 size={10} className="text-olive-dark/40" />
               </motion.a>
               <div className="w-8 h-px bg-olive-dark/10 mb-4"></div>
               <p className="text-xl font-serif tracking-widest">19:00</p>
@@ -412,8 +409,8 @@ export default function App() {
           
           <div className="space-y-2">
             <Accordion title="Upute o parkingu">
-              <p className="mb-4">Parkiranje prije okupljanja svatova i vjenčanja je moguće ispred restorana ,<strong>Terazza Mihita</strong> u neposrednoj blizini crkve i <strong>ispred crkve</strong>. </p>
-              <p>Parking za goste osiguran je u garaži restorana ,<strong>The Venue</strong>. Garaža je dostupna svim gostima tijekom cijele večeri.</p>
+              <p className="mb-4">Parkiranje prije okupljanja svatova i vjenčanja je moguće ispred restorana <strong>Terrazza Mihita</strong> u neposrednoj blizini crkve i <strong>ispred crkve</strong>.</p>
+              <p>Parking za goste osiguran je u garaži restorana <strong>The Venue</strong>. Garaža je dostupna svim gostima tijekom cijele večeri.</p>
             </Accordion>
           </div>
         </div>
