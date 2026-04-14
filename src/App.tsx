@@ -432,7 +432,7 @@ export default function App() {
             <div className="flex flex-col items-center">
               <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide text-olive-dark">Brigita</p>
               <a href="tel:0951231234" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
-                095 123 1234
+                095 509 9162
               </a>
             </div>
             
@@ -441,7 +441,7 @@ export default function App() {
             <div className="flex flex-col items-center">
               <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide text-olive-dark">Luka</p>
               <a href="tel:0951231234" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
-                095 123 1234
+                099 273 0826  
               </a>
             </div>
           </div>
