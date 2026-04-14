@@ -232,7 +232,7 @@ export default function App() {
               transition={{ delay: 1.5, duration: 1 }}
               className="absolute top-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-olive-dark/30 md:hidden"
             >
-              <span className="text-[8px] tracking-[0.2em] uppercase font-medium">Pomaknite dolje</span>
+              <span className="text-[8px] tracking-[0.2em] uppercase font-medium">Povucite dolje</span>
               <ChevronsDown size={14} className="animate-bounce" />
             </motion.div>
 
@@ -299,7 +299,8 @@ export default function App() {
       <section className="py-24 bg-wedding-green-dark px-6">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-lg font-serif text-olive-dark mb-2 tracking-[0.2em] pl-[0.2em] uppercase">Odbrojavanje</h2>
-          <p className="text-[10px] italic text-olive-dark/40 mb-8 uppercase tracking-widest">Do najljepšeg dana u našim životima</p>
+          <p className="text-[10px] italic text-olive-dark/40 mb-4 uppercase tracking-widest">Do najljepšeg dana u našim životima</p>
+          <Heart size={16} className="text-olive-dark/20 mx-auto mb-8" fill="currentColor" />
           <Countdown targetDate={weddingDate} />
         </div>
       </section>
@@ -382,7 +383,7 @@ export default function App() {
                 <MousePointer2 size={12} className="ml-1 text-olive-dark/40" />
               </motion.a>
               <div className="w-8 h-px bg-olive-dark/10 mb-4"></div>
-              <p className="text-xl font-serif tracking-widest">20:00</p>
+              <p className="text-xl font-serif tracking-widest">19:00</p>
             </div>
 
           </div>
@@ -422,7 +423,7 @@ export default function App() {
         <div className="max-w-2xl mx-auto border border-olive-dark/10 p-8 md:p-12 relative overflow-hidden">
           {/* Decorative Olive Branch in the frame */}
           <OliveBranchShort className="absolute -top-6 -right-6 w-24 h-24 text-olive-light/60 rotate-12 pointer-events-none" />
-          <OliveBranchShort className="absolute -bottom-6 -left-6 w-24 h-24 text-olive-light/60 -rotate-160 pointer-events-none" />
+          <OliveBranchShort className="absolute -bottom-6 -left-6 w-24 h-24 text-olive-light/60 rotate-12 pointer-events-none" />
           
           <p className="text-olive-dark/80 italic text-sm mb-10 tracking-[0.2em]">
             Molimo svoj dolazak potvrdite najkasnije do 1.9.2026.
@@ -432,7 +433,7 @@ export default function App() {
             <div className="flex flex-col items-center">
               <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide text-olive-dark">Brigita</p>
               <a href="tel:0951231234" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
-                095 509 9162
+                095 123 1234
               </a>
             </div>
             
@@ -441,7 +442,7 @@ export default function App() {
             <div className="flex flex-col items-center">
               <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide text-olive-dark">Luka</p>
               <a href="tel:0951231234" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
-                099 273 0826  
+                095 123 1234
               </a>
             </div>
           </div>
