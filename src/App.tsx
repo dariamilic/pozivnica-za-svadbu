@@ -211,16 +211,6 @@ export default function App() {
     >
       {/* Hero Section - Redesigned to match the image layout precisely */}
       <section className="relative h-screen flex items-center justify-center px-6 overflow-hidden bg-wedding-green">
-        {/* Decorative Top Olive Branch */}
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="absolute top-12 left-1/2 -translate-x-1/2 text-olive-light/40"
-        >
-          <OliveBranchShort className="w-16 h-16 rotate-180" />
-        </motion.div>
-
         <div className="max-w-5xl w-full h-full relative flex flex-col justify-between py-16 md:py-24">
           
           {/* Top Row: Names and Date */}
@@ -269,30 +259,31 @@ export default function App() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-4 flex flex-col items-center"
           >
             <p className="text-[10px] md:text-sm tracking-[0.4em] text-olive-dark uppercase mb-6 font-medium leading-loose">
               POZIVAMO VAS DA S NAMA PROSLAVITE NAŠE VJENČANJE!
             </p>
-            <div className="flex justify-center items-center gap-6">
+            <div className="flex justify-center items-center gap-6 mb-8">
               <div className="w-16 md:w-32 h-px bg-olive-dark/10"></div>
               <Heart size={18} className="text-olive-dark/40" fill="currentColor" />
               <div className="w-16 md:w-32 h-px bg-olive-dark/10"></div>
             </div>
+
+            {/* Scroll Indicator - Moved closer to heart and darkened */}
+            <motion.div 
+              animate={{ y: [0, 8, 0] }}
+              transition={{ repeat: Infinity, duration: 2.5 }}
+              className="text-olive-dark/50"
+            >
+              <ChevronsDown size={24} strokeWidth={1} />
+            </motion.div>
           </motion.div>
         </div>
 
         {/* Subtle Olive Branch Decorations - Updated to be more visible in the new palette */}
         <OliveBranchShort className="absolute top-20 right-40 w-48 h-48 text-olive-light/40 rotate-45 pointer-events-none" />
         <OliveBranchLong className="absolute bottom-20 right-10 w-64 h-64 text-olive-light/40 -rotate-12 pointer-events-none" />
-
-        <motion.div 
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2.5 }}
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 text-olive-dark/20"
-        >
-          <ChevronDown size={20} strokeWidth={1} />
-        </motion.div>
       </section>
 
       {/* Countdown Section - Slightly darker green as requested */}
@@ -315,14 +306,14 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             
             {/* Okupljanje */}
-            <div className="flex flex-col items-center px-4">
+            <div className="flex flex-col items-center px-4 mb-12 md:mb-0">
               <div className="w-10 h-10 rounded-full border border-olive-dark/10 flex items-center justify-center text-olive-dark bg-white shadow-sm mb-4">
                 <Clock size={20} strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-olive-dark/90">OKUPLJANJE</h3>
               <div className="w-px h-6 bg-olive-dark/10 mb-4 hidden md:block"></div>
               <p className="text-base text-olive-dark/90 font-medium mb-1 uppercase tracking-wider">Terrazza Mihita</p>
-              <p className="text-sm text-olive-dark/80 italic tracking-wide mb-1">Božjakovinska ul. 34B</p>
+              <p className="text-sm text-olive-dark/80 italic tracking-wide mb-4">Božjakovinska ul. 34B</p>
               <motion.a 
                 href="https://www.google.com/maps/search/?api=1&query=Božjakovinska+ul.+34B+Zagreb" 
                 target="_blank" 
@@ -331,21 +322,21 @@ export default function App() {
                 transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                 className="text-[10px] text-olive-dark/60 hover:text-olive-dark transition-colors flex items-center gap-1 mb-3 uppercase tracking-[0.2em]"
               >
-                Otvori <MousePointer2 size={10} className="text-olive-dark/40" />
+                Otvori lokaciju na karti <MousePointer2 size={10} className="text-olive-dark/40" />
               </motion.a>
               <div className="w-8 h-px bg-olive-dark/10 mb-4"></div>
-              <p className="text-xl font-serif tracking-widest">15:00</p>
+              <p className="text-3xl md:text-4xl font-serif tracking-widest">15:00</p>
             </div>
 
             {/* Vjenčanje */}
-            <div className="flex flex-col items-center px-4 border-y md:border-y-0 md:border-x border-olive-dark/10 py-8 md:py-0">
+            <div className="flex flex-col items-center px-4 border-y md:border-y-0 md:border-x border-olive-dark/10 py-8 md:py-0 mb-12 md:mb-0">
               <div className="w-10 h-10 rounded-full border border-olive-dark/10 flex items-center justify-center text-olive-dark bg-white shadow-sm mb-4">
                 <Church size={20} strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-olive-dark/90">VJENČANJE</h3>
               <div className="w-px h-6 bg-olive-dark/10 mb-4 hidden md:block"></div>
               <p className="text-base text-olive-dark/90 font-medium mb-1 uppercase tracking-wider">BDM MAJKE CRKVE</p>
-              <p className="text-sm text-olive-dark/80 italic tracking-wide mb-1">Tomaševa ul. 22</p>
+              <p className="text-sm text-olive-dark/80 italic tracking-wide mb-4">Tomaševa ul. 22</p>
               <motion.a 
                 href="https://www.google.com/maps/search/?api=1&query=Tomaševa+ul.+22+Zagreb" 
                 target="_blank" 
@@ -354,10 +345,10 @@ export default function App() {
                 transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                 className="text-[10px] text-olive-dark/60 hover:text-olive-dark transition-colors flex items-center gap-1 mb-3 uppercase tracking-[0.2em]"
               >
-                Otvori <MousePointer2 size={10} className="text-olive-dark/40" />
+                Otvori lokaciju na karti <MousePointer2 size={10} className="text-olive-dark/40" />
               </motion.a>
               <div className="w-8 h-px bg-olive-dark/10 mb-4"></div>
-              <p className="text-xl font-serif tracking-widest">17:00</p>
+              <p className="text-3xl md:text-4xl font-serif tracking-widest">17:00</p>
             </div>
 
             {/* Večera */}
@@ -368,7 +359,7 @@ export default function App() {
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-olive-dark/90">VEČERA</h3>
               <div className="w-px h-6 bg-olive-dark/10 mb-4 hidden md:block"></div>
               <p className="text-base text-olive-dark/90 font-medium mb-1 uppercase tracking-wider">The Venue</p>
-              <p className="text-sm text-olive-dark/80 italic tracking-wide mb-1">Ul. Grada Gospića 1a</p>
+              <p className="text-sm text-olive-dark/80 italic tracking-wide mb-4">Ul. Grada Gospića 1a</p>
               <motion.a 
                 href="https://maps.app.goo.gl/fkDgif6E2RYPKMkT7?g_st=iw" 
                 target="_blank" 
@@ -377,10 +368,10 @@ export default function App() {
                 transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                 className="text-[10px] text-olive-dark/60 hover:text-olive-dark transition-colors flex items-center gap-1 mb-3 uppercase tracking-[0.2em]"
               >
-                Otvori <MousePointer2 size={10} className="text-olive-dark/40" />
+                Otvori lokaciju na karti <MousePointer2 size={10} className="text-olive-dark/40" />
               </motion.a>
               <div className="w-8 h-px bg-olive-dark/10 mb-4"></div>
-              <p className="text-xl font-serif tracking-widest">19:00</p>
+              <p className="text-3xl md:text-4xl font-serif tracking-widest">19:00</p>
             </div>
 
           </div>
@@ -409,7 +400,7 @@ export default function App() {
           
           <div className="space-y-2">
             <Accordion title="Upute o parkingu">
-              <p className="mb-4">Parkiranje prije okupljanja svatova i vjenčanja je moguće ispred restorana <strong>Terrazza Mihita</strong> u neposrednoj blizini crkve i <strong>ispred crkve</strong>.</p>
+              <p className="mb-4">Parkiranje prije okupljanja i vjenčanja je moguće ispred restorana <strong>Terrazza Mihita</strong> u neposrednoj blizini crkve i <strong>ispred crkve</strong>.</p>
               <p>Parking za goste osiguran je u garaži restorana <strong>The Venue</strong>. Garaža je dostupna svim gostima tijekom cijele večeri.</p>
             </Accordion>
           </div>
