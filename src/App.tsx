@@ -335,7 +335,7 @@ export default function App() {
               </div>
               <h3 className="text-lg font-serif mb-3 tracking-[0.3em] uppercase text-olive-dark/90">VJENČANJE</h3>
               <div className="w-px h-6 bg-olive-dark/10 mb-4 hidden md:block"></div>
-              <p className="text-base text-olive-dark/90 font-medium mb-1 uppercase tracking-wider">BDM MAJKE CRKVE</p>
+              <p className="text-base text-olive-dark/90 font-medium mb-1 uppercase tracking-wider">CRKVA BDM MAJKE CRKVE</p>
               <p className="text-sm text-olive-dark/80 italic tracking-wide mb-4">Tomaševa ul. 22</p>
               <motion.a 
                 href="https://www.google.com/maps/search/?api=1&query=Tomaševa+ul.+22+Zagreb" 
