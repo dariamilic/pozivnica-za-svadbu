@@ -419,20 +419,20 @@ export default function App() {
           </p>
           
           <div className="flex flex-row justify-center items-center gap-8 md:gap-16">
-            <div className="flex flex-col items-center">
-              <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide text-olive-dark">Brigita</p>
-              <a href="tel:0955099162" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
-                095 509 9162
-              </a>
-            </div>
-            
-            <div className="w-px h-12 bg-olive-dark/10"></div>
-
-            <div className="flex flex-col items-center">
-              <p className="text-2xl md:text-3xl font-serif mb-2 tracking-wide text-olive-dark">Luka</p>
-              <a href="tel:0992730826" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
-                099 273 0826
-              </a>
+            <div className="flex flex-row items-center gap-8 md:gap-16">
+              <div className="flex flex-row items-center gap-2">
+                <p className="text-2xl md:text-3xl font-serif tracking-wide text-olive-dark mr-2">Brigita</p>
+                <a href="tel:0955099162" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
+                  095 509 9162
+                </a>
+              </div>
+              <span className="text-olive-dark/30 text-xl md:text-2xl mx-2">|</span>
+              <div className="flex flex-row items-center gap-2">
+                <p className="text-2xl md:text-3xl font-serif tracking-wide text-olive-dark mr-2">Luka</p>
+                <a href="tel:0992730826" className="text-olive-dark/60 hover:text-olive-dark transition-colors text-xs md:text-sm tracking-[0.2em]">
+                  099 273 0826
+                </a>
+              </div>
             </div>
           </div>
         </div>
