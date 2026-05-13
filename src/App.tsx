@@ -325,7 +325,7 @@ export default function App() {
                 Otvori lokaciju na karti <MousePointer2 size={10} className="text-olive-dark/40" />
               </motion.a>
               <div className="w-8 h-px bg-olive-dark/10 mb-4"></div>
-              <p className="text-3xl md:text-4xl font-serif tracking-widest">15:00</p>
+              <p className="text-3xl md:text-4xl font-serif tracking-widest">15:30</p>
             </div>
 
             {/* Vjenčanje */}
@@ -348,7 +348,7 @@ export default function App() {
                 Otvori lokaciju na karti <MousePointer2 size={10} className="text-olive-dark/40" />
               </motion.a>
               <div className="w-8 h-px bg-olive-dark/10 mb-4"></div>
-              <p className="text-3xl md:text-4xl font-serif tracking-widest">17:00</p>
+              <p className="text-3xl md:text-4xl font-serif tracking-widest">17:30</p>
             </div>
 
             {/* Večera */}
